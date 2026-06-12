@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
     Network, 
     BookOpen, 
@@ -19,6 +19,11 @@ import SkillsDoc from './lessons/SkillsDoc';
 
 const App = () => {
     const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard', 'mcp', 'git', 'sdd'
+
+    // Cuộn lên đầu trang mỗi khi chuyển view (tránh giữ nguyên vị trí cuộn của màn hình trước)
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }, [currentView]);
 
     // Dữ liệu danh sách bài học trên Dashboard
     const lessons = [
