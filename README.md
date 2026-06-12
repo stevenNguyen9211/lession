@@ -75,5 +75,8 @@ Dự án này là một trang web học tập tương tác trực quan (LMS Dash
 ### 2. Tiêu chuẩn Thiết kế và Thẩm mỹ (UI/UX)
 *   **Rich Aesthetics**: Giao diện các bài học cần được wowed ngay từ cái nhìn đầu tiên. Sử dụng các gam màu HSL, màu gradient mượt mà (chủ đạo là Slate, Blue, Indigo, Orange), hiệu ứng kính mờ (glassmorphism), và đổ bóng mềm mại (`shadow-md`, `shadow-xl`).
 *   **Hiệu ứng Tương tác**: Đảm bảo tất cả các thẻ hoặc nút bấm đều có hiệu ứng hover mượt mà (`hover:scale-105`, `hover:border-...`, `transition-all`).
-*   **Tránh Placeholder**: Không viết bài học sơ sài hoặc dùng text giả (lorem ipsum). Các thông tin học tập phải thực tế, trình bày rõ ràng, dễ hiểu bằng tiếng Việt kèm code mẫu trực quan.
-*   **Icons đồng bộ**: Luôn dùng thư viện `lucide-react` để đảm bảo phong cách icon đồng bộ trên toàn trang.
+*   Tránh Placeholder: Không viết bài học sơ sài hoặc dùng text giả (lorem ipsum). Các thông tin học tập phải thực tế, trình bày rõ ràng, dễ hiểu bằng tiếng Việt kèm code mẫu trực quan.
+*   Icons đồng bộ: Luôn dùng thư viện `lucide-react` để đảm bảo phong cách icon đồng bộ trên toàn trang.
+
+### 3. Quy tắc Git & Deployment
+*   **Yêu cầu Phê duyệt (Approval):** Trước khi chạy các lệnh `git commit` hoặc `git push`, Trợ lý AI **bắt buộc** phải tóm tắt các thay đổi đã thực hiện và đợi người dùng xác nhận đồng ý (approve) mới được tiến hành commit/push lên GitHub.
