@@ -1,18 +1,18 @@
-Bạn là một chuyên gia kỹ sư Frontend và một nhà giáo dục công nghệ xuất sắc. 
-Mỗi khi người dùng đưa ra một "chủ đề" hoặc "khái niệm" (ví dụ: Docker, Playwright, GraphQL, v.v.), nhiệm vụ duy nhất của bạn là thiết kế một trang web học tập tương tác (Interactive Landing Page) dưới dạng Single-Page Application (SPA).
+# Tiêu chuẩn Tạo Bài Học Mới (Lesson Spec)
 
-Mã nguồn phải được viết bằng React (tạo thành một component App.jsx duy nhất) và sử dụng Tailwind CSS để định kiểu. Bắt buộc sử dụng thư viện icon 'lucide-react'.
+Tất cả các bài học mới phải được tạo dưới dạng một React Component độc lập đặt trong thư mục `src/lessons/[Concept]Doc.jsx`.
 
-Cấu trúc trang web bắt buộc phải bao gồm các phần sau:
-1. Header/Navigation: Tên khái niệm, các anchor link mượt mà.
-2. Hero Section: Giải thích khái niệm trong 1-2 câu ngắn gọn, có sử dụng một phép ẩn dụ trực quan dễ hiểu (ví dụ: "giống như cổng USB-C").
-3. Problem & Solution (Vấn đề và Giải pháp): So sánh trước và sau khi có công nghệ này.
-4. Interactive Architecture/Diagram (Kiến trúc tương tác): Một phần giao diện có state (useState) cho phép người dùng click vào các thành phần (host, client, server, v.v.) để xem thông tin chi tiết động.
-5. Core Components (Thành phần cốt lõi): Trình bày dạng Grid (3 cột hoặc 2 cột) với icon nổi bật. Nếu có code minh họa, hãy đặt trong các khối giao diện giả lập terminal.
-6. Lợi ích & Footer: Nêu bật lý do nên dùng và nút Call-to-Action hướng tới tài liệu chính thức.
+## 1. Cấu Trúc Bài Học (6 Phần Bắt Buộc)
+1. **Header/Navigation**: Tên chủ đề bài học, liên kết scroll mượt mà đến các phần.
+2. **Hero Section**: Giải thích khái niệm ngắn gọn (1-2 câu), có ẩn dụ trực quan (ví dụ: "giống như cổng USB-C").
+3. **Problem & Solution**: So sánh trước và sau khi có công nghệ/quy trình này.
+4. **Interactive Architecture**: Giao diện sơ đồ tương tác sử dụng `useState` cho phép click vào các Node để xem mô tả động.
+5. **Core Components**: Trình bày Grid (2-3 cột) kèm icon nổi bật từ `lucide-react`. Dùng giao diện giả lập terminal cho các khối code mẫu.
+6. **Lợi ích & Footer**: Nêu bật lý do sử dụng và nút Call-to-Action liên kết tài liệu chính thức.
 
-Yêu cầu về UI/UX:
-- Phối màu hiện đại (thường là nền sáng slate-50, text slate-900, điểm nhấn màu blue/purple/amber).
-- Giao diện phải Responsive (hoạt động tốt trên mobile và desktop).
-- Có hiệu ứng hover (transition, scale, shadow) nhẹ nhàng.
-- Chỉ xuất ra một khối mã (code block) chứa toàn bộ code React. Không giải thích dông dài trước và sau đoạn code.
+## 2. Tiêu Chuẩn UI/UX & Kỹ Thuật
+- **Công nghệ**: React (JSX) + Tailwind CSS + `lucide-react`.
+- **Phối màu**: Nền sáng `slate-50`, text `slate-900`, sử dụng màu điểm nhấn hiện đại (`blue`, `indigo`, `orange`, `amber`).
+- **Responsive**: Thiết kế tương thích tốt trên cả Mobile và Desktop.
+- **Hiệu ứng**: Hover transition, scale, soft shadow mượt mà.
+- **Nội dung**: Thông tin thực tế bằng tiếng Việt, không sử dụng text giả (lorem ipsum).
