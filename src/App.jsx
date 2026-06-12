@@ -10,12 +10,16 @@ import {
     ArrowLeft,
     GraduationCap,
     Flame,
-    Sparkles
+    Sparkles,
+    Terminal,
+    Zap
 } from 'lucide-react';
 import MCPDoc from './lessons/MCPDoc';
 import GitDoc from './lessons/GitDoc';
 import SDDDoc from './lessons/SDDDoc';
 import SkillsDoc from './lessons/SkillsDoc';
+import PlaywrightCliDoc from './lessons/PlaywrightCliDoc';
+import GithubActionDoc from './lessons/GithubActionDoc';
 
 const App = () => {
     const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard', 'mcp', 'git', 'sdd'
@@ -66,6 +70,26 @@ const App = () => {
             difficultyColor: 'text-amber-600 bg-amber-100',
             icon: <Sparkles className="w-8 h-8 text-purple-600" />,
             bgGradient: 'from-purple-500/10 to-indigo-500/10 hover:border-purple-400'
+        },
+        {
+            id: 'playwright-cli',
+            title: 'Playwright CLI',
+            description: 'Khám phá bộ công cụ dòng lệnh của Playwright - trung tâm điều khiển vạn năng để chạy, debug và tự động sinh code test một cách trực quan.',
+            time: '10 phút',
+            difficulty: 'Cơ bản',
+            difficultyColor: 'text-green-600 bg-green-100',
+            icon: <Terminal className="w-8 h-8 text-emerald-600" />,
+            bgGradient: 'from-emerald-500/10 to-teal-500/10 hover:border-emerald-400'
+        },
+        {
+            id: 'github-action',
+            title: 'GitHub Actions',
+            description: 'Tìm hiểu dây chuyền lắp ráp tự động cho code (CI/CD) thông qua việc phân tích cấu trúc file YAML từ đơn giản đến nâng cao.',
+            time: '15 phút',
+            difficulty: 'Trung bình',
+            difficultyColor: 'text-amber-600 bg-amber-100',
+            icon: <Zap className="w-8 h-8 text-blue-600" />,
+            bgGradient: 'from-blue-500/10 to-indigo-500/10 hover:border-blue-400'
         }
     ];
 
@@ -172,6 +196,8 @@ const App = () => {
             {currentView === 'git' && <GitDoc />}
             {currentView === 'sdd' && <SDDDoc />}
             {currentView === 'skills' && <SkillsDoc />}
+            {currentView === 'playwright-cli' && <PlaywrightCliDoc />}
+            {currentView === 'github-action' && <GithubActionDoc />}
 
             {/* Footer */}
             <footer className="bg-slate-100 border-t border-slate-200 py-8 mt-12 text-center text-sm text-slate-500">
