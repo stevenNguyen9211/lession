@@ -78,14 +78,6 @@ const App = () => {
                                 <ArrowLeft className="w-4 h-4" /> Quay lại Dashboard
                             </button>
                         )}
-                        <a 
-                            href="https://modelcontextprotocol.io" 
-                            target="_blank" 
-                            rel="noreferrer" 
-                            className="bg-slate-950 text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-slate-800 transition-colors shadow-sm"
-                        >
-                            Tài liệu MCP
-                        </a>
                     </div>
                 </div>
             </nav>

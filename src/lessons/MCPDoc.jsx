@@ -58,6 +58,14 @@ const App = () => {
                     <a href="#kien-truc" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 hover:gap-3">
                         Bắt đầu khám phá <ChevronRight className="w-5 h-5" />
                     </a>
+                    <a 
+                        href="https://modelcontextprotocol.io" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all flex items-center justify-center gap-2"
+                    >
+                        Tài liệu chính thức
+                    </a>
                 </div>
             </section>
 
@@ -257,6 +265,17 @@ const App = () => {
                             <p className="text-slate-600">Thay vì viết code tích hợp 10 nguồn dữ liệu cho 5 mô hình AI khác nhau (50 tích hợp). Với MCP, bạn chỉ cần tạo 10 Servers, mọi AI tự động kết nối được.</p>
                         </div>
                     </div>
+                </div>
+
+                <div className="mt-12 text-center">
+                    <a 
+                        href="https://modelcontextprotocol.io" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-xl transition-all hover:scale-105"
+                    >
+                        Xem Tài liệu MCP chính thức
+                    </a>
                 </div>
             </section>
         </div>
