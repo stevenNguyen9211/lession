@@ -9,11 +9,13 @@ import {
     GitBranch, 
     ArrowLeft,
     GraduationCap,
-    Flame
+    Flame,
+    Sparkles
 } from 'lucide-react';
 import MCPDoc from './lessons/MCPDoc';
 import GitDoc from './lessons/GitDoc';
 import SDDDoc from './lessons/SDDDoc';
+import SkillsDoc from './lessons/SkillsDoc';
 
 const App = () => {
     const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard', 'mcp', 'git', 'sdd'
@@ -49,6 +51,16 @@ const App = () => {
             difficultyColor: 'text-indigo-600 bg-indigo-100',
             icon: <BookOpen className="w-8 h-8 text-indigo-600" />,
             bgGradient: 'from-indigo-500/10 to-purple-500/10 hover:border-indigo-400'
+        },
+        {
+            id: 'skills',
+            title: 'Claude Skills là gì?',
+            description: 'Đóng gói quy trình thành thư mục hướng dẫn mà Claude tự nạp khi cần - giống cẩm nang đào tạo nhân viên mới. Tìm hiểu progressive disclosure và cách viết SKILL.md.',
+            time: '12 phút',
+            difficulty: 'Trung bình',
+            difficultyColor: 'text-amber-600 bg-amber-100',
+            icon: <Sparkles className="w-8 h-8 text-purple-600" />,
+            bgGradient: 'from-purple-500/10 to-indigo-500/10 hover:border-purple-400'
         }
     ];
 
@@ -154,6 +166,7 @@ const App = () => {
             {currentView === 'mcp' && <MCPDoc />}
             {currentView === 'git' && <GitDoc />}
             {currentView === 'sdd' && <SDDDoc />}
+            {currentView === 'skills' && <SkillsDoc />}
 
             {/* Footer */}
             <footer className="bg-slate-100 border-t border-slate-200 py-8 mt-12 text-center text-sm text-slate-500">
